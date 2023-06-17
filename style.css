@@ -15,6 +15,7 @@ body {
 .action-area {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 1% 2%;
   padding: 20px;
   flex-wrap: wrap;
@@ -40,7 +41,8 @@ body {
 .participant-dp img {
   height: 70px;
   width: 70px;
-  background-size: contain;
+  background-position: center;
+  object-fit: cover;
   border-radius: 50px;
   margin-bottom: 8px;
 }
@@ -73,9 +75,29 @@ body {
   background-color: red;
 }
 
+.action-icons span:hover {
+  cursor: pointer;
+  background-color: rgb(69, 69, 69);
+}
+
+.action-icons span:last-child:hover {
+  background-color: rgb(138, 4, 4);
+}
+
 .activity-icons {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+}
+
+.activity-icons span {
+  font-size: 1.25rem;
+  padding: 7px;
+}
+.activity-icons span:hover {
+  cursor: pointer;
+  background-color: rgb(69, 69, 69);
+  background-color: rgb(89, 89, 89);
+  border-radius: 50px;
 }
